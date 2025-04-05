@@ -1,11 +1,26 @@
 
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text for readability */
+}
 
 /* Navbar Styles */
 .navbar {
-    background-color: #1a202c !important;; /* Dark background */
-    color: white; /* White text */
-    padding: 1rem; /* Add padding */
-  }
+  background-color: #1a202c !important; /* Dark background */
+  color: white; /* White text */
+  padding: 1rem; /* Add padding */
+  border: 2px solid #f27500; /* Add a light blue border */
+  margin: 15px auto; /* Center the navbar */
+  width: 1000px; /* Adjust the width to fit the content */
+  border-radius: 15px; /* Optional: Add rounded corners */
+}
+.navbar:hover {
+  background-color: #2d3748; /* Slightly lighter background on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+  transition: transform 0.5s ease; /* Smooth transition */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  border: 2px solid #f27500; /* Keep the light blue border */
+}
   
   .navbar-brand {
     font-size: 1.5rem; /* Larger font size for the brand */
