@@ -14,6 +14,13 @@ body {
   width: 1000px; /* Adjust the width to fit the content */
   border-radius: 15px; /* Optional: Add rounded corners */
 }
+.navbar-logo {
+  height: 55px; /* Set the height of the logo */
+  width: 120px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between the logo and text */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
 .navbar:hover {
   background-color: #2d3748; /* Slightly lighter background on hover */
   transform: scale(1.02); /* Slight zoom effect */
@@ -30,18 +37,27 @@ body {
   }
   
   .navbar-brand:hover {
-    color: #63b3ed; /* Light blue on hover */
+    color: #f27500; /* Light blue on hover */
   }
   
   .nav-link {
     color: #ffffff; /* White links */
     margin-right: 1rem; /* Spacing between links */
     transition: color 0.3s ease; /* Smooth hover effect */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 500; /* Medium weight */
+    font-family: 'Arial'; /* Change font family */
   }
   
   .nav-link:hover {
-    color: #63b3ed; /* Light blue on hover */
+    color: #f27500; /* Light blue on hover */
   }
+  .nav-link.active,
+.nav-link:focus {
+    color: #f27500 !important; /* Blue when active or clicked */
+    font-weight: bold; /* Bold for active link */
+    border-bottom: 2px solid  #f27500; /* Optional: Add underline effect */
+}
   
   .navbar-toggler {
     border-color: #ffffff; /* White border for the toggler */
@@ -54,3 +70,171 @@ body {
   .navbar-collapse {
     justify-content: flex-end; /* Align links to the right */
   }
+  /* Welcome Section Styles */
+#welcome {
+  
+  color: #ffffff; /* White text for readability */
+  padding: 4rem 2rem; /* Add padding to make it larger */
+  border-radius: 10px; /* Rounded corners */
+  
+  margin-top: 2rem; /* Add spacing from the navbar */
+}
+
+#welcome h2 {
+  
+  font-size: 6rem;  /* Larger font size for the heading */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 1.5rem; /* Add spacing below the heading */
+  color:rgb(190, 95, 6); /* Custom color for the heading */
+}
+#welcome h2:hover {
+  color: rgb(190, 95, 6); /* Change color on hover */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+ 
+}
+
+#welcome p {
+ margin-top: 2rem; /* Add spacing above the paragraph */.
+ margin-left: 2rem; /* Add left margin for alignment */
+  font-size: 1.4rem; /* Slightly larger font size for the paragraph */
+  line-height: 1.8; /* Increase line spacing for readability */
+  margin-bottom: 2rem; /* Add spacing below the paragraph */
+  text-align: justify;
+
+}
+
+#welcome img {
+  margin-top: 2rem; /* Add spacing above the image */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border: 10px solid #1a202c; /* Add a light blue border */
+  border-radius: 20px; /* Optional: Add rounded corners to the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+}
+#welcome img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#welcome .btn {
+  background-color:#1a202c; /* Custom button color */
+  color: #ffffff; /* White text */
+  border: 2px solid rgb(190, 95, 6); /* Remove border */
+  padding: 0.8rem 1.5rem; /* Add padding to make the button larger */
+  font-size: 1.4rem; /* Slightly larger font size */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#welcome .btn:hover {
+  background-color:rgb(190, 95, 6); /* Darker shade on hover */
+ transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+  
+
+}
+#welcome h3 {
+  margin-top: 4rem; /* Add spacing above the heading */
+  font-size: 4.5rem; /* Larger font size for the heading */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 1.5rem; /* Add spacing below the heading */
+  color:rgb(190, 95, 6); /* Custom color for the heading */
+}
+/* Detail Area Cards */
+
+#detail {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the cards */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  padding: 2rem; /* Add padding around the detail area */
+  margin-top: 2rem; /* Add spacing from the welcome section */
+}
+#detail .card {
+  background-color: #1a202c; /* Dark background for the card */
+  color: #ffffff; /* White text for readability */
+  border: 2px solid #f27500; /* Add a border with orange color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+#detail .card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Add a deeper shadow on hover */
+}
+
+#detail .card-title {
+  font-size: 1.5rem; /* Larger font size for the title */
+  font-weight: bold; /* Bold text for the title */
+  margin-bottom: 1rem; /* Add spacing below the title */
+  color: #f27500; /* Orange color for the title */
+}
+
+#detail.card-text {
+  font-size: 2.5rem; /* Larger font size for the numbers */
+  font-weight: bold; /* Bold text for the numbers */
+  margin-top: 1rem; /* Add spacing above the text */
+  color: #ffffff; /* White color for the numbers */
+}
+
+#detail .card-body {
+  text-align: center; /* Center-align the content inside the card */
+  padding: 2rem; /* Add padding inside the card */
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #1a202c; /* Dark background for the section */
+  color: #ffffff; /* White text for readability */
+  padding: 4rem 2rem; /* Add padding to the section */
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  margin-top: 2rem; /* Add spacing from the previous section */
+}
+
+#contact .title-text {
+  font-size: 2.5rem; /* Larger font size for the title */
+  font-weight: bold; /* Bold text for the title */
+  margin-bottom: 1.5rem; /* Add spacing below the title */
+  color: #f27500; /* Orange color for the title */
+}
+
+#contact p {
+  font-size: 1.2rem; /* Slightly larger font size for the text */
+  line-height: 1.8; /* Increase line spacing for readability */
+  margin-bottom: 2rem; /* Add spacing below the text */
+}
+
+#contact .contact-info {
+  margin-top: 2rem; /* Add spacing above the contact info */
+}
+
+#contact .contact-info i {
+  font-size: 2rem; /* Larger icon size */
+  color: #f27500; /* Orange color for the icons */
+  margin-bottom: 1rem; /* Add spacing below the icon */
+}
+
+#contact .contact-info h4 {
+  font-size: 1.5rem; /* Larger font size for the headings */
+  font-weight: bold; /* Bold text for the headings */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+}
+
+#contact .contact-info p {
+  font-size: 1.1rem; /* Slightly larger font size for the contact details */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+#contact a {
+  color: #f27500; /* Orange color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+#contact a:hover {
+  color: #d65e00; /* Darker orange on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
