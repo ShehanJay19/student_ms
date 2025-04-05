@@ -11,12 +11,10 @@
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     </head>
     <body>
+<h1>Welcome to Sipvimana MIS</h1>
+<p>Welcome to the Student Management System. This is a simple web application to manage student records.</p>
 
-
-
-
-
-
+<a  href="/students" class="button">View Students</a> 
 
     </body>
 </html>

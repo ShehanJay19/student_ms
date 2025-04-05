@@ -6,5 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/students', function () {
-    return view('');
+    return view('students.index');
 });
