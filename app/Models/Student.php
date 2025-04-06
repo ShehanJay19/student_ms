@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    protected $fillable=['student_id','name','contact_number','student_image'];
+    protected $fillable=['name','contact_number','student_image'];
     /** @use HasFactory<\Database\Factories\StudentFactory> */
     use HasFactory;
 }
