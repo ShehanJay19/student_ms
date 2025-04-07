@@ -1,15 +1,27 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sipvimana MIS | Home</title>
-</head>
-<body>
-    <h2>Welcome to Sipvimana MIS</h2>
-    <h3>Student List</h3>
-    
-    <ul>
-        <li>Students here</li>
-    </ul>
-</body>
-</html>
+<x-layout>
+    <section id="students" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">All Students</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($students as $student)
+                        <tr>
+                            <td>ST{{ $student->student_id }}</td>
+                            <td>{{ $student->name }}</td>
+                            <td>{{ $student->contact_number}}</td>
+                            
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </section>
+</x-layout>

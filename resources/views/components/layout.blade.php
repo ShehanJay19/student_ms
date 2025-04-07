@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                        <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Students</a>
+                    <a class="nav-link {{ Request::is('students') ? 'active' : '' }}" href="{{ url('/students') }}">Students</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Teachers</a>

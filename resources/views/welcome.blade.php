@@ -1,4 +1,4 @@
-<
+
 
   <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
         <!-- viwe Students  Column -->
         <div class="text-center">
             <h3 class="mt-4">Explore Our Students</h3>
-            <a href="" class="btn btn-primary mb-3">View Students</a>
+            <a class="btn btn-primary mb-3 {{ Request::is('students') ? 'active' : '' }}" href="{{ url('/students') }}">View Students</a>
         </div>
     </div>
 </div>
