@@ -14,7 +14,7 @@
                 <tbody>
                     @foreach ($courses as $course)
                         <tr>
-                            <td>ST{{ $course->course_id }}</td>
+                            <td>CO{{ $course->course_id }}</td>
                             <td>{{ $course->course_name }}</td>
                             <td>{{ $course->course_description}}</td>
                       
