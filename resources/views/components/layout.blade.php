@@ -34,7 +34,7 @@
                         <a class="nav-link {{ Request::is('teachers') ? 'active' : '' }}" href="{{ url('/teachers') }}">Teachers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link {{ Request::is ('courses')? 'active' : ''}}" href="{{ url('/courses')}}">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
