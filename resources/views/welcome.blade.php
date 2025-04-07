@@ -1,8 +1,19 @@
 <
- <x-layout>
-   
-  
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipvimana MIS</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--custom css -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head> 
+  
+ <x-layout>
      <!-- Welcome Area -->
      <section id="welcome">
 <div class="container mt-5">
@@ -37,28 +48,31 @@
      <div class="row">
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+             
               <div class="card-body">
+                <p class="card-text display-4">{{ $totalTeachers}}</p>
                 <h5 class="card-title">Total Teachers</h5>
-                <p class="card-text display-4"></p>
+                
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+             
               <div class="card-body">
-                <h5 class="card-title">Total Courses</h5>
-                    <p class="card-text display-4"></p>
+               <p class="card-text display-4">{{ $totalCourses}}</p> 
+               <h5 class="card-title">Total Courses</h5>
+                    
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+              
               <div class="card-body">
-                <h5 class="card-title">Total Students</h5>
-                    <p class="card-text display-4"></p>
+               <p class="card-text display-4">{{ $totalStudents}}</p> 
+               <h5 class="card-title">Total Students</h5>
+                    
               </div>
             </div>
           </div>

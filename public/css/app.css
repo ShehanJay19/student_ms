@@ -173,12 +173,6 @@ body {
   color: #f27500; /* Orange color for the title */
 }
 
-#detail.card-text {
-  font-size: 2.5rem; /* Larger font size for the numbers */
-  font-weight: bold; /* Bold text for the numbers */
-  margin-top: 1rem; /* Add spacing above the text */
-  color: #ffffff; /* White color for the numbers */
-}
 
 #detail .card-body {
   text-align: center; /* Center-align the content inside the card */
@@ -237,4 +231,16 @@ body {
 #contact a:hover {
   color: #d65e00; /* Darker orange on hover */
   text-decoration: underline; /* Add underline on hover */
+}
+#contact .contact-info {
+  display: flex; /
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; /
+  margin-top: 2rem;
+}
+
+#contact .contact-info div {
+  text-align: center; /* Center-align the text inside each contact info block */
 }
