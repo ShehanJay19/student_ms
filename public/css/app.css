@@ -261,7 +261,7 @@ body {
 }
 
 #students .list-group-item {
-  background-color:rgba(255, 255, 255, 0.83); /* White background for list items */
+  background-color:rgb(255, 255, 255); /* White background for list items */
   border: 3px solid rgb(0, 0, 0) ; /* Light border */
   border-radius: 5px; /* Rounded corners */
   margin-bottom: 1rem; /* Spacing between list items */
