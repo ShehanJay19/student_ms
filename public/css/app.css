@@ -244,45 +244,43 @@ body {
 #contact .contact-info div {
   text-align: center; /* Center-align the text inside each contact info block */
 }
-/* Student List Section */
-#students {
-  background-color: #1a202c; /* Light background for the section */
+/* Shared Styles for Students and Teachers Sections */
+#students, #teachers {
+  background-color: #f8f9fa; /* Light background for the section */
   padding: 2rem; /* Add padding to the section */
-  
+  border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   margin-top: 2rem; /* Add spacing from the top */
 }
 
-#students h2 {
+#students h2, #teachers h2 {
   font-size: 2.5rem; /* Larger font size for the heading */
   font-weight: bold; /* Bold heading */
-  color:rgb(255, 255, 255); /* Dark gray color for the heading */
+  color: #343a40; /* Dark gray color for the heading */
   margin-bottom: 1.5rem; /* Add spacing below the heading */
 }
 
-#students .list-group-item {
-  background-color:rgb(255, 255, 255); /* White background for list items */
-  border: 3px solid rgb(0, 0, 0) ; /* Light border */
+#students .list-group-item, #teachers .list-group-item {
+  background-color: #ffffff; /* White background for list items */
+  border: 1px solid #ddd; /* Light border */
   border-radius: 5px; /* Rounded corners */
   margin-bottom: 1rem; /* Spacing between list items */
   padding: 1rem; /* Add padding inside the list item */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-#students .list-group-item:hover {
+#students .list-group-item:hover, #teachers .list-group-item:hover {
   background-color: #f1f1f1; /* Slightly darker background on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
-#students .btn {
-  background-color: #1a202c; /* Primary blue color for the button */
-  border: 2px solid rgb(190, 95, 6); /* Light blue border */
+#students .btn, #teachers .btn {
+  background-color: rgb(255, 51, 0); /* Primary blue color for the button */
   color: #ffffff; /* White text */
   border-radius: 5px; /* Rounded corners for the button */
   transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-#students .btn:hover {
-  background-color:rgb(190, 95, 6); /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+#students .btn:hover, #teachers .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }

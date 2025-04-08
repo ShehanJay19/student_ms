@@ -1,27 +1,23 @@
 <x-layout>
-    <section id="students" class="mt-5">
+    <head>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head>
+    <section id="teachers" class="mt-5">
         <div class="container">
             <h2 class="text-center mb-4">All Students</h2>
-            <table class="table table-bordered table-striped">
-                <thead class="table-dark">
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                      
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($teachers as $teacher)
-                        <tr>
-                            <td>TE{{ $teacher ->teacher_id }}</td>
-                            <td>{{ $teacher ->name }}</td>
-                            <td>{{ $teacher->contact_number}}</td>
-                            
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
+            <ul class="list-group">
+                @foreach ($teachers as $teacher)
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>ID:</strong>TE{{ $teacher->teacher_id }} <br>
+                            <strong>Name:</strong> {{ $teacher->name }} <br>
+                            <strong>Phone:</strong> {{ $teacher->contact_number }}
+                        </div>
+                        <a href="{{ url('/students' . $teacher->teacher_id) }}" class="btn btn-primary btn-sm">More Details</a>
+                       
+                    </li>
+                @endforeach
+            </ul>
         </div>
     </section>
 </x-layout>
