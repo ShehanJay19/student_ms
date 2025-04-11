@@ -12,4 +12,9 @@ class StudentController extends Controller
     $students = Student::all();
     return view('students.index', compact('students'));
  }
+ public function show($student_id)
+    {
+        $student = Student::findOrFail($student_id); // Fetch the student by ID
+        return view('students.studentInfo', compact('student'));
+    }
 }

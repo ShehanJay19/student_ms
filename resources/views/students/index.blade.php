@@ -13,7 +13,7 @@
                             <strong>Name:</strong> {{ $student->name }} <br>
                             <strong>Phone:</strong> {{ $student->contact_number }}
                         </div>
-                        <a href="{{ url('/students' . $student->student_id) }}" class="btn btn-primary btn-sm">More Details</a>
+                        <a href="{{ url('/students/' . $student->student_id) }}" class="btn btn-primary btn-sm">More Details</a>
                        
                     </li>
                 @endforeach

@@ -284,3 +284,23 @@ body {
 #students .btn:hover, #teachers .btn:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+#student-info {
+    background-color: #f8f9fa; /* Light background */
+    padding: 2rem; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#student-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+#student-info .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
