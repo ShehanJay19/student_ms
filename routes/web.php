@@ -17,3 +17,4 @@ Route::get('/courses', [CourseController::class, 'index']);
 
 Route::get('/students/{id}', [StudentController::class, 'show']);
 
+Route::get('/teachers/{id}', [TeacherController::class, 'show']);
