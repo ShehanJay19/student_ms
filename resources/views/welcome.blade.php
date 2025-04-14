@@ -76,7 +76,12 @@
               </div>
             </div>
           </div>
-         
+      <div id="register">
+        <h3 class="mt-4">Register Now</h3>
+        <a class="btn btn-primary mb-3 {{ Request::is('register') ? 'active' : '' }}" href="{{ url('/register') }}">Register</a>
+
+
+      </div>
         </div>
     </section>
         <!-- End Detail area -->

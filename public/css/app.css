@@ -304,3 +304,11 @@ body {
     border-radius: 5px;
     margin-bottom: 0.5rem;
 }
+.register{
+padding: 2rem; /* Add padding */
+  background-color: #1a202c; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  margin-top: 2rem; /* Add spacing from the previous section */
+}
