@@ -304,11 +304,35 @@ body {
     border-radius: 5px;
     margin-bottom: 0.5rem;
 }
-.register{
-padding: 2rem; /* Add padding */
-  background-color: #1a202c; /* Dark background */
-  color: #ffffff; /* White text for readability */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-  margin-top: 2rem; /* Add spacing from the previous section */
+#register {
+    padding: 2rem; /* Add padding inside the div */
+    background-color: #1a202c; /* Dark background */
+    color: #ffffff; /* White text for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    text-align: center; /* Center-align the content */
+    margin-top: 2rem; /* Add spacing from the previous section */
+}
+
+#register h3 {
+    font-size: 2rem; /* Larger font size for the heading */
+    font-weight: bold; /* Bold heading */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+    color: #f27500; /* Orange color for the heading */
+}
+
+#register a {
+    background-color:rgb(1, 1, 43); /* Orange background for the button */
+    color: #ffffff; /* White text for the button */
+    padding: 0.8rem 1.5rem; /* Add padding to the button */
+    font-size: 1.2rem; /* Slightly larger font size */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+#register a:hover {
+    background-color: #d65e00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
