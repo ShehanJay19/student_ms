@@ -13,4 +13,6 @@ class Student extends Model
     /** @use HasFactory<\Database\Factories\StudentFactory> */
     use HasFactory;
     protected $primaryKey = 'student_id'; // Specify the primary key column
+
+    
 }

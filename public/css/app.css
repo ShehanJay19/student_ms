@@ -322,10 +322,11 @@ body {
 }
 
 #register a {
-    background-color:rgb(1, 1, 43); /* Orange background for the button */
+    background-color: #1a202c; /* Orange background for the button */
     color: #ffffff; /* White text for the button */
     padding: 0.8rem 1.5rem; /* Add padding to the button */
     font-size: 1.2rem; /* Slightly larger font size */
+    border: 2px solid #f27500; /* Orange border */
     border-radius: 5px; /* Rounded corners for the button */
     text-decoration: none; /* Remove underline from the link */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
