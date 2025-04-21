@@ -305,15 +305,19 @@ body {
     margin-bottom: 0.5rem;
 }
 #register {
-    padding: 2rem; /* Add padding inside the div */
-    background-color: #1a202c; /* Dark background */
-    color: #ffffff; /* White text for readability */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    text-align: center; /* Center-align the content */
-    margin-top: 2rem; /* Add spacing from the previous section */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 2rem; /* Add padding inside the div */
+  background-color: #1a202c; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  text-align: center; /* Center-align the text */
+  margin: 2rem auto; /* Center the div horizontally with auto margins */
+  max-width: 600px; /* Optional: Limit the width of the div */
 }
-
 #register h3 {
     font-size: 2rem; /* Larger font size for the heading */
     font-weight: bold; /* Bold heading */
